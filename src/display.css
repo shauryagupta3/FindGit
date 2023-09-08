@@ -1,0 +1,47 @@
+.data{
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 500px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+}
+
+.repos{
+    display: flex;
+    flex-direction: column;
+}
+
+.label{
+    font-weight: 600;
+}
+
+#github{
+    color: var(--color-background);
+}
+
+img{
+    width: 30%;
+    align-self: center;
+    border: 10px solid var(--color-foreground);
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px){
+    .data{
+        flex-direction: column;
+    }
+    img{
+        width: 60%;
+    }
+    #github{
+        width: 30%;
+    }
+}
